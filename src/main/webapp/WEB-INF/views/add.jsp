@@ -11,17 +11,19 @@
 </head>
 <body>
 	<div>
-		<c:url value="/add" var="addUrl" />
-		<a href="${addUrl }">선수 추가</a>
+	<c:url value="/list" var="listUrl" />
+	<a href="${listUrl }">목록보기</a>
 	</div>
+	
 	<div>
-	선수목록
-	<ul>
-		<c:forEach items="${list }" var="item" varStatus="status">
-			<li id="${status.index }">${item }</li>
-		</c:forEach>
-	</ul>
+	선수 추가
+	<form action="" method="post">
+		<label for="input1">이름</label>
+		<input type="text" id="input1" name="name" />
+		<input type="submit" value="추가" />
+	</form>
 	</div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
