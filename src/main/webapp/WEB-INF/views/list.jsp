@@ -27,7 +27,7 @@
 	이름 수정
 	<c:url value="/update" var="updateUrl" />
 	<form action="${updateUrl }" method="post">
-		<input type="hidden" id="input1" />
+		<input type="hidden" id="input1" name="index" />
 		<input type="text" name="name" id="input2" />
 		<input type="submit" value="수정" />
 	</form>
