@@ -32,7 +32,7 @@
 						<a href="${addUrl }" class="btn btn-primary"><i
 							class="fa-solid fa-plus"></i></a>
 					</div>
-					<div>
+					<div class="mt-3">
 						<c:forEach items="${list }" var="item" varStatus="status">
 							<div class="card">
 								<div id="${status.index }" class="card-body name-item">
